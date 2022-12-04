@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Пункт 3</title>
+    </head>
+    <body>
+        <h1>
+            Пункт 3
+        </h1>
+        <select>
+            <option id='red' data-color="#ff6b6b" onclick="changeColor('red')">Красный</option>
+            <option id='blue' data-color="#71f8ff" onclick="changeColor('blue')">Голубой</option>
+            <option id='green' data-color="#00ff00" onclick="changeColor('green')">Зеленый</option>
+        </select>
+        <script>  
+            function changeColor(colorValue) {
+                document.body.style.background = document
+                    .getElementById(colorValue)
+                    .dataset
+                    .color;
+            }
+        </script>
+    </body>
+</html>
